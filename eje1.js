@@ -22,9 +22,13 @@ document.write(`<br>El total de nombres que contiene 'Ñ' son: ${contieneEnie}.`
 */
 
 var cadena = 'Carmen Caña Celeste Gabriela';
-var palabras = cadena.split(' ');
+//var palabras = cadena.split(' ');
 var regex = /C/i;
+var regex2 = /(\w+\s|\w+$)/gi;
 var comienzan_conC = 0;
+
+
+var coincidencias = regex.exec(cadena);
 
 
 for (let i = 0; i < palabras.length; i++){
