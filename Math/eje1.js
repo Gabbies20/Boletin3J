@@ -11,8 +11,8 @@ Cálculo de la raíz cuadrada de un número
  */
 
 var opcion = prompt("Indique la opcion: \n 1.Redondeo a su inmediato superior de un número \n 2.Redondeo a su inmediato inferior de un número \n 3.Redondeo al número más cercano \n 4.Cálculo del número máximo entre dos dados \n 5.Cálculo del número mínimo entre dos dados \n 6. Cálculo de un número elevado a otro \n 7.Cálculo de la raíz cuadrada de un número");
-var numero = 42.12;
-var numero2 = 15;
+var numero = 3.25;
+var numero2 = 9;
 switch (opcion) {
     case '1':
 
@@ -36,17 +36,17 @@ switch (opcion) {
         break;
     case '5':
 
-        console.log(Math.ceil(numero));
+        console.log(Math.min(numero,numero2));
         
         break;
     case '6':
 
-        console.log(Math.ceil(numero));
+        console.log(Math.pow(numero,numero2));
         
         break;
     case '7':
 
-        console.log(Math.ceil(numero));
+        console.log(Math.sqrt(numero));
         
         break;
 
