@@ -7,8 +7,6 @@ var matricula_usuario = 'abc1234'.toUpperCase();
 var regex_letras = /^[A-Z]{3}[0-9]{4}$/i;
 
 if(regex_letras.test(matricula_usuario)){
-    console.log(`La matricula es correcta.`);
-
     var resultado = matricula_usuario.substring(0,3);
     var resultado_numeros = matricula_usuario.substring(3);
     var formato = `${resultado}-${resultado_numeros}`
