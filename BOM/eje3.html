@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="" onclick="abrirVentana()">Nueva Venta</a>
+    <br>
+    <a href="" onclick="cerrarVentana()">Cerrar ventana</a>
+    <script>
+        var nueva_ventana;
+
+        function abrirVentana(){
+            nueva_ventana = window.open('', '', 'left=' + (screen.width - 400) + ',top=' + (screen.height - 400) + ',width=400,height=400,resizable=yes,scrollbars=yes');
+
+            nueva_ventana.document.write('<h1>El ojo es la ventana a tu alma </h1>')
+        }
+
+        function cerrarVentana(){
+            if(nueva_ventana){
+                nueva_ventana.close();
+            }
+        }
+    </script>
+</body>
+</html>

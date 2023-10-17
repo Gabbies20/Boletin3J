@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abrir y cerrar ventana</title>
+</head>
+<body>
+    <a href="#" onclick="abrirVentana();">Abrir ventana</a>
+    <a href="#" onclick="cerrarVentana();">Cerrar ventana</a>
+
+    <script>
+        let ventanaNueva;
+
+        function abrirVentana() {
+            // Calcula el centro de la pantalla
+            const centerX = (screen.width - 400) / 2;
+            const centerY = (screen.height - 400) / 2;
+
+            // Abre una nueva ventana en el centro de la pantalla
+            ventanaNueva = window.open('', '', 'left=' + centerX + ',top=' + centerY + ',width=400,height=400,resizable=yes,scrollbars=yes');
+
+            // Carga el contenido en la nueva ventana
+            ventanaNueva.document.write('<html><head><title>Ventana Nueva</title></head><body style="font-size: 24px;">El ojo es la ventana a tu alma</body></html');
+        }
+
+        function cerrarVentana() {
+            // Cierra la ventana abierta anteriormente
+            if (ventanaNueva) {
+                ventanaNueva.close();
+            }
+        }
+    </script>
+</body>
+</html>
