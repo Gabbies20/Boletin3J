@@ -1,8 +1,17 @@
+/**
+ * Crear un programa que va a crear un reloj digital en el título. Utilice el método setInterval() para actualizar el título de la página una vez cada minuto con la hora actual.
+ * 
+ * Ejemplo básico de setInterval():
+ * 
 function imprimirHola() {
     console.log("Hola, mundo");
   }
+
+setInterval(imprimirHola, 1000); // Imprimirá "Hola, mundo" cada 1000 milisegundos (1 segundo).
+ */
+
   
-  setInterval(imprimirHola, 1000); // Imprimirá "Hola, mundo" cada 1000 milisegundos (1 segundo).
+
 
 
         // Función para obtener la hora actual en formato HH:MM:SS
