@@ -20,6 +20,7 @@ function actualizarReloj() {
     document.write("Reloj Digital - " + horaActual);
 }
 
+
 // Actualizar el reloj cada segundo (1000 milisegundos)
 setInterval(actualizarReloj, 1000);
 
