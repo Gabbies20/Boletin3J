@@ -9,20 +9,34 @@
     <a href="" onclick="abrirVentana()">Nueva Venta</a>
     <br>
     <a href="" onclick="cerrarVentana()">Cerrar ventana</a>
-    <script>
-        var nueva_ventana;
 
+
+    <script>
+
+        var nueva_ventana;
         function abrirVentana(){
             nueva_ventana = window.open('', '', 'left=' + (screen.width - 400) + ',top=' + (screen.height - 400) + ',width=400,height=400,resizable=yes,scrollbars=yes');
 
             nueva_ventana.document.write('<h1>El ojo es la ventana a tu alma </h1>')
         }
-
         function cerrarVentana(){
             if(nueva_ventana){
                 nueva_ventana.close();
             }
         }
+
     </script>
 </body>
 </html>
+
+/*
+nueva_ventana = window.open('', ''): Esto inicia la apertura de una nueva ventana. La función window.open() se utiliza para abrir una nueva ventana y devuelve una referencia a esa ventana, que en este caso se almacena en la variable nueva_ventana. Los dos primeros argumentos ('' y '') especifican la URL y el nombre de la ventana. En este caso, ambos están en blanco, lo que significa que la nueva ventana no tiene una URL específica y no se le asigna un nombre.
+
+'left=' + (screen.width - 400) + ',top=' + (screen.height - 400): En esta parte, se establecen las coordenadas de la nueva ventana. screen.width y screen.height representan el ancho y alto de la pantalla del usuario. Restando 400 píxeles al ancho y alto de la pantalla, se coloca la ventana emergente cerca de la esquina inferior derecha de la pantalla.
+
+'width=400,height=400': Esto establece el ancho y alto de la nueva ventana en 400 píxeles cada uno, lo que significa que la ventana emergente tendrá dimensiones de 400x400 píxeles.
+
+'resizable=yes,scrollbars=yes': Estas opciones permiten que la ventana emergente sea redimensionable (resizable=yes) por el usuario y muestre barras de desplazamiento si es necesario (scrollbars=yes).
+
+Entonces, en resumen, el código abre una nueva ventana emergente sin una URL específica, la posiciona en la esquina inferior derecha de la pantalla, le asigna un tamaño de 400x400 píxeles y permite que el usuario la redimensione y muestre barras de desplazamiento si es necesario. La referencia a la nueva ventana se almacena en la variable nueva_ventana, lo que te permitirá interactuar con ella posteriormente en tu código.
+*/

@@ -2,8 +2,6 @@
  * Escribe un algoritmo que lea desde la entrada estándar dos fechas dadas por día, mes y año y calcule cuál de ellas es anterior a la otra.
  * 
  */
-
-
 var dia_fecha1 = 10;
 var dia_fecha2 = 1;
 

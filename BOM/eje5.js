@@ -10,10 +10,6 @@ function imprimirHola() {
 setInterval(imprimirHola, 1000); // Imprimirá "Hola, mundo" cada 1000 milisegundos (1 segundo).
  */
 
-  
-
-
-
         // Función para obtener la hora actual en formato HH:MM:SS
         function obtenerHoraActual() {
             const ahora = new Date();
