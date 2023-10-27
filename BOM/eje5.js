@@ -3,7 +3,7 @@ function imprimirHola() {
   }
 
 setInterval(imprimirHola, 1000); // Imprimirá "Hola, mundo" cada 1000 milisegundos (1 segundo).
- */
+ 
 
   
 
